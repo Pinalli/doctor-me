@@ -4,7 +4,7 @@
 API deve garantir:
 
 • [ ] Garantir que a API tenha um código limpo e de fácil manutenção <br>
-• [ ] Garantir que a API tenha uma forma ágil de acesso ao banco de dados [prisma]<br>
+• [x] Garantir que a API tenha uma forma ágil de acesso ao banco de dados [prisma]<br>
 • [ ] Garantir que a API tenha um tratamento de erros <br>
 • [ ] Garantir que a API não pare quando algum erro for retornado <br>
 • [ ] Garantir que a API valide qualquer payload recebido <br>
@@ -43,7 +43,7 @@ API deve garantir:
   &ensp;     ◦ Relações: Patient<br>
 • [ ] Appointment <br>
    &ensp;    ◦ Campos: ID, Date, Made, PatientID, DoctorID, CreatedAt_ <br>
-   &ensp;    ◦ Relações: Patient, Doctor_<br>
+   &ensp;    ◦ Relações: Patient, Doctor<br>
 • [ ] Doctor  <br>
   &ensp;     ◦ Campos: ID, FirstName, LastName, City, State, Speciality, Bio, Picture, Price, Availability, Experience, Attendances,  Address, CreatedAt<br>
     &ensp;   ◦ Relações: Agenda, Appointment<br>

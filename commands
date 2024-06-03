@@ -10,3 +10,7 @@ npm init -y
     npx prisma migrate dev --name add-user-table
     npx prisma migrate dev --name add-patient-table
     npx prisma migrate dev --name add-doctor-agenda-appointment-table
+
+EXPRESS
+   npm install express cors helmet
+   npm install -D @types/cors
