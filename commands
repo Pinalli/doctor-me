@@ -1,0 +1,8 @@
+npm init -y
+
+ npm install typescript tsx @types/node -D
+ npx tsc --init -> config file
+
+ DB
+    npm install prisma -D
+    npx prisma init --datasource-provider sqlite
