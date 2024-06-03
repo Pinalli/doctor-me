@@ -14,7 +14,7 @@ API deve garantir:
  ## A API deve ter os seguintes casos de uso:
 
 • [] Listar médicos <br>
-    ⁃[] Incluir no retorno a agenda de cada nédico <br>
+   &ensp; ⁃[] Incluir no retorno a agenda de cada médico <br>
 • [] Obter dados do médico <br>
      ◦[] Garantir que o ID de um médico foi enviado na chamada  ◦ Request <br>
      ◦[] Garantir que o ID do médico existe <br>
