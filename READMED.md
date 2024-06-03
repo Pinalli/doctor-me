@@ -35,7 +35,7 @@ API deve garantir:
 
  # Tabelas do sistema
 
-• [] Patient _Paciente_ 
+• [] Patient Paciente
      ◦ Campos: ID, UserID, Name, Phone, CreatedAt. 
      ◦ Relações: Appointments[], User_ 
 • [] User 

@@ -6,3 +6,7 @@ npm init -y
  DB
     npm install prisma -D
     npx prisma init --datasource-provider sqlite
+
+    npx prisma migrate dev --name add-user-table
+    npx prisma migrate dev --name add-patient-table
+    npx prisma migrate dev --name add-doctor-agenda-appointment-table
