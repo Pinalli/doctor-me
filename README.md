@@ -4,7 +4,7 @@
 API deve garantir:
 
 • [ ] Garantir que a API tenha um código limpo e de fácil manutenção <br>
-• [x] Garantir que a API tenha uma forma ágil de acesso ao banco de dados [prisma]<br>
+• [X] Garantir que a API tenha uma forma ágil de acesso ao banco de dados [prisma]<br>
 • [ ] Garantir que a API tenha um tratamento de erros <br>
 • [ ] Garantir que a API não pare quando algum erro for retornado <br>
 • [ ] Garantir que a API valide qualquer payload recebido <br>
@@ -15,11 +15,11 @@ API deve garantir:
 
 • [ ] Listar médicos <br>
    &ensp;  ◦ [] Incluir no retorno a agenda de cada médico <br>
-• [ ] Obter dados do médico <br>
+• [X] Obter dados do médico <br>
   &ensp;   ◦ [ ] Garantir que o ID de um médico foi enviado na chamada  ◦ Request <br>
   &ensp;   ◦ [ ] Garantir que o ID do médico existe <br>
   &ensp;   ◦ [ ] Retornar os dados do mnédico com a agenda <br>
-• [ ] Obter dados do paciente <br>
+• [X] Obter dados do paciente <br>
   &ensp;   ◦ [ ] Garantir o acesso somente a usuários autenticados  ◦ Request <br>
    &ensp;  ◦ [ ] Garantir que o Telefone de um paciente foi enviado na chamada  ◦ Requesrt <br>
    &ensp;  ◦ [ ] Garantir que o Telefone e de um paciente que existe <br>
@@ -42,7 +42,7 @@ API deve garantir:
   &ensp;     ◦ Campos: ID, Phone, Password, CreatedAt <br>
   &ensp;     ◦ Relações: Patient<br>
 • [ ] Appointment <br>
-   &ensp;    ◦ Campos: ID, Date, Made, PatientID, DoctorID, CreatedAt_ <br>
+   &ensp;    ◦ Campos: ID, Date, Made, PatientID, DoctorID, CreatedAt <br>
    &ensp;    ◦ Relações: Patient, Doctor<br>
 • [ ] Doctor  <br>
   &ensp;     ◦ Campos: ID, FirstName, LastName, City, State, Speciality, Bio, Picture, Price, Availability, Experience, Attendances,  Address, CreatedAt<br>
