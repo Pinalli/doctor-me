@@ -14,3 +14,5 @@ npm init -y
 EXPRESS
    npm install express cors helmet
    npm install -D @types/cors
+
+   npm install express-async-errors
