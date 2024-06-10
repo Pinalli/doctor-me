@@ -1,4 +1,4 @@
-import DatabaseService from "@infra/DatabaseService";
+import DatabaseService from "@/infra/DatabaseService";
 import { hashPassword } from "@/infra/helpers/SecurityHelper";
 
 export default class CreatePatientUseCase {

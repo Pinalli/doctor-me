@@ -20,6 +20,6 @@ EXPRESS
 
    npm install express-async-errors
 
-CRIPT 
+CRYPT
    npm install bcrypt 
    npm install -D @types/bcrypt

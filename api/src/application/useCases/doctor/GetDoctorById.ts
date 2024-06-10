@@ -2,10 +2,10 @@ import DatabaseService from "@/infra/DatabaseService";
 
 export default class GetDoctorByIdUseCase {
   constructor(readonly database: DatabaseService) {}
-  async execute(id: number) {
 
-    const AGENDA = true;
-    const doctor = await this.database.getDoctorById(id,AGENDA);
+  async execute(id: number) {
+    const INCLUDE_AGENDA = true;
+    const doctor = await this.database.getDoctorById(id,INCLUDE_AGENDA);
 
     if (!doctor) {
       throw new Error("Doctor not found");

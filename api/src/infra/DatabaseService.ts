@@ -1,4 +1,4 @@
-import DatabaseService from "@infra/DatabaseService";
+import DatabaseService from "./DatabaseService";
 import { PrismaClient } from "@prisma/client";
 
 export default class DatabaseService {
@@ -21,12 +21,12 @@ export default class DatabaseService {
     return this.connection.patient.findUnique({
       where: { phone },
       include: {
-        appointments: includeAppointment,
+        appointment: includeAppointment,
       },
     });
   }
 
-  creatUser(phone: string, password: string) {
+  createUser(phone: string, password: string) {
     return this.connection.user.create({
       data: {
         phone,
@@ -35,11 +35,12 @@ export default class DatabaseService {
     });
   }
 
-  creatPatient(phone: string, password: string) {
+  createPatient(name: string, phone: string, userId: number) {
     return this.connection.patient.create({
       data: {
+        name,
         phone,
-        password,
+        userId,
       },
     });
   }

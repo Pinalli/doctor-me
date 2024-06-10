@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
 
 export default interface DoctorController{
-    ListDoctor(req: Request, res: Response): Promise<void>;
+    listDoctor(req: Request, res: Response): Promise<void>;
 }
