@@ -17,13 +17,13 @@ API deve garantir:
    &ensp;  ◦ [] Incluir no retorno a agenda de cada médico <br>
 • [X] Obter dados do médico <br>
   &ensp;   ◦ [ ] Garantir que o ID de um médico foi enviado na chamada  ◦ Request <br>
-  &ensp;   ◦ [ ] Garantir que o ID do médico existe <br>
-  &ensp;   ◦ [ ] Retornar os dados do mnédico com a agenda <br>
+  &ensp;   ◦ [x] Garantir que o ID do médico existe <br>
+  &ensp;   ◦ [X] Retornar os dados do m9édico com a agenda <br>
 • [X] Obter dados do paciente <br>
   &ensp;   ◦ [ ] Garantir o acesso somente a usuários autenticados  ◦ Request <br>
-   &ensp;  ◦ [ ] Garantir que o Telefone de um paciente foi enviado na chamada  ◦ Requesrt <br>
-   &ensp;  ◦ [ ] Garantir que o Telefone e de um paciente que existe <br>
-    &ensp; ◦ [ ] Incluir no retorno os agendamentos <br>
+   &ensp;  ◦ [ ] Garantir que o Telefone de um paciente foi enviado na chamada  ◦ Request <br>
+   &ensp;  ◦ [X] Garantir que o Telefone é de um paciente que existe <br>
+    &ensp; ◦ [X] Incluir no retorno os agendamentos <br>
 • [ ] Criar conta do paciente <br>
   &ensp;  ◦ [ ] Criar conta com none, telefone e senha<br>
   &ensp;  ◦ [ ] Garantir somente um usuário por telefone<br>

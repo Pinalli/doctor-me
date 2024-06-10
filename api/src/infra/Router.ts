@@ -1,3 +1,4 @@
+import { PatientController } from '@/application/controller/PatientController';
 import 'express-async-errors'
 import express from 'express'
 import cors from 'cors'
@@ -8,7 +9,7 @@ export default class Router {
   app: express.Express;
 
   constructor(
-    readonly doctorController: DoctorController
+    readonly doctorController: DoctorController, readonly PatientController: PatientController
   ) {
     this.app = express();
     this.app.use(cors());
@@ -24,6 +25,7 @@ export default class Router {
     });
 
     this.app.get('/doctors', this.doctorController.ListDoctor);
+    this.app.post('/patient', this.PatientController.createPatient);
   }
 
   public start(port: number) {

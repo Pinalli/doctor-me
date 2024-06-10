@@ -8,7 +8,7 @@ export default class DatabaseService {
     return this.connection.doctor.findMany();
   }
 
-  getDoctorById(id: number, includeAgenda = false) {
+  getDoctorById(id: number, includeAgenda: boolean = false) {
     return this.connection.doctor.findUnique({
       where: { id },
       include: {
@@ -17,7 +17,7 @@ export default class DatabaseService {
     });
   }
 
-  getPatientByPhone(phone: string, includeAppointment = boolean) {
+  getPatientByPhone(phone: string, includeAppointment: boolean = false) {
     return this.connection.patient.findUnique({
       where: { phone },
       include: {
@@ -25,6 +25,26 @@ export default class DatabaseService {
       },
     });
   }
+
+  creatUser(phone: string, password: string) {
+    return this.connection.user.create({
+      data: {
+        phone,
+        password,
+      },
+    });
+  }
+
+  creatPatient(phone: string, password: string) {
+    return this.connection.patient.create({
+      data: {
+        phone,
+        password,
+      },
+    });
+  }
+
+
 }
 
 export const database = new DatabaseService(new PrismaClient());

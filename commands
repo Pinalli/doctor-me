@@ -19,3 +19,7 @@ EXPRESS
    npm install -D @types/cors
 
    npm install express-async-errors
+
+CRIPT 
+   npm install bcrypt 
+   npm install -D @types/bcrypt
